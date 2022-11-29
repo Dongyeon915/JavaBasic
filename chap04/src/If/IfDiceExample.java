@@ -1,3 +1,5 @@
+package If;
+
 public class IfDiceExample {
 
   public static void main(String[] args) {
