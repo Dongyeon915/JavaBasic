@@ -20,7 +20,7 @@ public class SwitchExample {
         break;
       case 5:
         System.out.println("5번이 나왔습니다");
-        break; 
+        break;
     }
   }
 }
