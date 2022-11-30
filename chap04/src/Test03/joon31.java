@@ -11,10 +11,10 @@ public class joon31 {
     Scanner scanner = new Scanner(System.in);
     N = scanner.nextInt();
     for (; N <= 9; N++) {
-      for (int i = 1; i <= 9; i++) {
-        System.out.println(N + "*" + i + "=" + N*i);
+      for (int i = 1; i <= 9;) {
+        System.out.println(N + "*" + i + "=" + (N*i));
+        i++;
       }
-
     }
   }
 }
