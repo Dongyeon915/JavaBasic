@@ -12,6 +12,21 @@ public class Nomu {
   }
 
   public Nomu(String name, int size, String color) {
+    this.name = name;
+    this.size = size;
+    this.color = color;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public int getSize() {
+    return size;
+  }
+
+  public String getColor() {
+    return color;
   }
 
   //기술동작
@@ -35,4 +50,7 @@ public class Nomu {
   public void getClone(){
     System.out.println("복제된 Nomu는" + clone + "개 입니다");
   }
-}
+
+
+  }
+
