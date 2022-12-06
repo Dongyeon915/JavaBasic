@@ -4,11 +4,10 @@ import java.util.Date;
 
 public class Whisky {
 
-  private int mill = 10;
-  private int ssal = 10;
-  private int water = 10;
+  private int mill;
+  private int ssal;
+  private int water;
   public String date = new Date().toString();
-
 
 
   public Whisky() {
