@@ -6,22 +6,26 @@ public class Fountainpen {
 
   private String brand;
   private String nibsize;
-  private int ink = 0;
-  private int paper = 0;
+  private int ink;
+  private int paper;
   //총사용 종이량
-  private int usedpaper = 0;
+  private int usedpaper;
 
   //기본생성자
   public Fountainpen() {
   }
-
-  ;
 
   //제조사,닙사이즈 생성자
   public Fountainpen(String brand, String nibsize) {
     this.brand = brand;
     this.nibsize = nibsize;
   }
+
+  //brand를 가져오는 getter
+  public String getbrand(){
+    return this.brand;
+  }
+
 
   //잉크 잔량 확인 getter
   public void getInk() {
@@ -40,38 +44,38 @@ public class Fountainpen {
 
 
   //잉크를 충전하는 setter
-  int inknum = 0;
-
-  public int setink(int inkcountnum) {
-    int inknum = this.ink = inkcountnum;
-    return inknum;
+  public void setink(int inkcountnum) {
+    this.ink = inkcountnum;
   }
 
   //종이를 가져오는 setter
-  int papernum = 0;
-
-  public int setPaper(int papercountnum) {
-    int papernum = this.paper = papercountnum;
-    return papernum;
+  public void setPaper(int papercountnum) {
+    this.paper = papercountnum;
   }
 
-  //잉크와 종이로 글을 사용하는 동작 (1:1로 필요함)
-  String mm = null;
 
-  public void write(int inkcountnum, int papercountnum) {
-    if (this.inknum == inkcountnum) {
-      if (this.papernum == papercountnum) {
-        this.inknum--;
-        this.papernum--;
-        this.usedpaper++;
-        System.out.println("종이에 글을 작성했습니다.");
-      } else if (this.inknum < inkcountnum) {
-        System.out.println("잉크가 부족합니다.");
-      } else if (this.papernum < papercountnum) {
-        System.out.println("종이가 부족합니다.");
-      } else {
-        System.out.println("잉크와 종이가 부족합니다");
-      }
+  //잉크와 종이로 글을 사용하는 동작 (1:1로 필요함)
+  public void write(int ink1, int paper1) {
+    if ((this.ink == ink1) && (this.paper == paper1)) {
+      this.ink--;
+      this.paper--;
+      System.out.println("종이에 글을 작성했습니다");
+    } else if ((this.ink < ink1) && (this.paper < paper1)) {
+      System.out.println("잉크와 종이 둘다 부족합니다");
+    } else if (this.paper < paper1) {
+      System.out.println("종이가 부족합니다");
+    } else if (this.ink < ink1) {
+      System.out.println("잉크가 부족합니다");
+    }
+  }
+
+  //모든 펜에 잉크와 종이를 추가하는 동작문
+
+  public static void readytowrite(Fountainpen[] pennarray) {
+    for (int i = 0; i < pennarray.length; i++) {
+      pennarray[i].setink(i);
+      pennarray[i].setPaper(i);
+      System.out.println(pennarray[i].getbrand() + "의 잉크와 종이를 " + pennarray.length + " 만큼 채웟습니다");
     }
   }
 }
