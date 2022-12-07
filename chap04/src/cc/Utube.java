@@ -7,8 +7,7 @@ public class Utube {
   private String title = "한국 8강 실패";
   private String id;
   private String field;
-  private String[] member;
-  public static int Ucount = 0;
+  public static int  Ucount = 0;
   public Date date = new Date();
   private int good = 0;
   private int bad = 0;
@@ -33,9 +32,6 @@ public class Utube {
     return this.field;
   }
 
-  public void getUcount() {
-    System.out.println(this.Ucount);
-  }
 
   public String setfield(String d) {
     this.field = d;
@@ -69,4 +65,8 @@ public class Utube {
   public void getbad() {
     System.out.println("싫어요 갯수는 " + this.bad);
   }
+
+//  public static void getUcount() {
+//    System.out.println("현재 회원수는 " + this.Ucount + "입니다");
+//  }
 }

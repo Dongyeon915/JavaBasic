@@ -17,18 +17,18 @@ public class UtubeTest {
 
     System.out.println(user1.getTitle());
 
+
     user1.setfield("너 나와");
     Utube[] mem = {user1, user2, user3};
     user1.setgood(1);
 
-    for (int i = 0; i < mem.length; i++) {
-      System.out.println(mem[i].getid() + ":" + mem[i].getfield());
-    }
 
-    user1.getgood();
+//    for (int i = 0; i < mem.length; i++) {
+//      System.out.println(mem[i].getid() + ":" + mem[i].getfield());
+//    }
 
-    user1.setbad(1);
-    user1.getbad();
+
+
 
   }
 }
