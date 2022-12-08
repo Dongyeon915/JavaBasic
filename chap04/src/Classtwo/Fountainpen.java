@@ -1,13 +1,13 @@
 package Classtwo;
 
-import java.awt.Stroke;
-
 public class Fountainpen {
 
   private String brand;
   private String nibsize;
   private int ink;
   private int paper;
+
+
   //총사용 종이량
   private int usedpaper;
 
@@ -22,7 +22,7 @@ public class Fountainpen {
   }
 
   //brand를 가져오는 getter
-  public String getbrand(){
+  public String getbrand() {
     return this.brand;
   }
 
@@ -30,6 +30,11 @@ public class Fountainpen {
   //잉크 잔량 확인 getter
   public void getInk() {
     System.out.println("잉크 잔량은 : " + this.ink + "입니다");
+  }
+
+  //nib size를 확인 getter
+  public void getnib() {
+    System.out.println("현재 닙사이즈는 " + this.nibsize + " 입니다.");
   }
 
   //남은 종이량 확인 getter
@@ -41,7 +46,7 @@ public class Fountainpen {
   public void getUsedpaper() {
     System.out.println("지금까지 글을 작성한 종이는 : " + this.usedpaper + " 개 입니다");
   }
-
+  
 
   //잉크를 충전하는 setter
   public void setink(int inkcountnum) {
@@ -70,7 +75,6 @@ public class Fountainpen {
   }
 
   //모든 펜에 잉크와 종이를 추가하는 동작문
-
   public static void readytowrite(Fountainpen[] pennarray) {
     for (int i = 0; i < pennarray.length; i++) {
       pennarray[i].setink(i);
@@ -78,5 +82,12 @@ public class Fountainpen {
       System.out.println(pennarray[i].getbrand() + "의 잉크와 종이를 " + pennarray.length + " 만큼 채웟습니다");
     }
   }
+
+  //nib사이즈 교체 동작
+  public void setchangnib(String nibsize) {
+    this.nibsize = nibsize;
+  }
+
 }
+
 
