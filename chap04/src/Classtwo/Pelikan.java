@@ -3,10 +3,10 @@ package Classtwo;
 public class Pelikan {
 
   public static void main(String[] args) {
-    Fountainpen Test = new Fountainpen();
-    Fountainpen fountainpen = new Fountainpen("pelikan", "M");
-    Fountainpen fountainpen1 = new Fountainpen("twisbi", "F");
-    Fountainpen fountainpen2 = new Fountainpen("Aurora", "ef");
+    FountainPen Test = new FountainPen();
+    FountainPen fountainpen = new FountainPen("pelikan", "M");
+    FountainPen fountainpen1 = new FountainPen("twisbi", "F");
+    FountainPen fountainpen2 = new FountainPen("Aurora", "ef");
 
     fountainpen.setink(1);
     fountainpen.setPaper(1);
@@ -19,8 +19,8 @@ public class Pelikan {
     fountainpen.setink(1);
     fountainpen.write(1,1);
 
-    Fountainpen[] penmodum = {fountainpen,fountainpen1,fountainpen2};
-    Fountainpen.readytowrite(penmodum);
+    FountainPen[] penmodum = {fountainpen,fountainpen1,fountainpen2};
+    FountainPen.readytowrite(penmodum);
 
     fountainpen.setchangnib("B");
     fountainpen.getnib();
