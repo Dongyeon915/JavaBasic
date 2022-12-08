@@ -1,4 +1,4 @@
-package cc;
+package cc.Gun;
 
 public class GunTest {
 
