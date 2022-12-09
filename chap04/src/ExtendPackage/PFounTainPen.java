@@ -10,6 +10,8 @@ public class PFounTainPen {
   private String brande;
   private String nibSize;
 
+  private int ink;
+
   /**
    * 기본 생성자
    */
@@ -67,5 +69,10 @@ public class PFounTainPen {
   public String setNibSize(String NibSize){
     this.nibSize = NibSize;
     return this.nibSize;
+  }
+
+  public int inkFull(int inkCount){
+  this.ink = inkCount;
+  return this.ink;
   }
 }

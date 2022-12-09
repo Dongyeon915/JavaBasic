@@ -15,7 +15,16 @@ public class Pellikan extends PFounTainPen {
     this.ink = ink;
   }
 
+  @Override
+  public int inkFull(int inkCount) {
+    return super.inkFull(3);
+  }
+
   public static void main(String[] args) {
     Pellikan pellikan = new Pellikan("펠리칸", "M", 2);
+
+
   }
+
+
 }
