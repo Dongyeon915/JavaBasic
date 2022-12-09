@@ -11,6 +11,13 @@ public class PFounTainPen {
   private String nibSize;
 
   /**
+   * 기본 생성자
+   */
+  public PFounTainPen(){
+
+  }
+
+  /**
    * Instantiates a new P foun tain pen.
    *
    * @param brande  초기 브랜드명을 입력하세요.
@@ -20,6 +27,7 @@ public class PFounTainPen {
     this.brande = brande;
     this.nibSize = nibSize;
   }
+
 
   /**
    * Brande명을 알려주는 getter입니다.
@@ -42,11 +50,22 @@ public class PFounTainPen {
   /**
    * Brande를 변경하는 setter입니다.
    *
-   * @param Brande 변경할 Brande명
+   * @param Brande 변경할 Brande 입력
    * @return 변경한 brande를 반환
    */
   public String setBrande(String Brande){
     this.brande = Brande;
     return this.brande;
+  }
+
+  /**
+   * NibSize를 변경하는 setter입니다.
+   *
+   * @param NibSize 변경할 NibSize 입력
+   * @return 변경한 NibSize를 반환
+   */
+  public String setNibSize(String NibSize){
+    this.nibSize = NibSize;
+    return this.nibSize;
   }
 }
