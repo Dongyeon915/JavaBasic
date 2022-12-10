@@ -3,7 +3,7 @@ package cc.ExtendTwo;
 /**
  * The type Super one for all.
  */
-public class SuperOneForAll {
+public abstract class SuperOneForAll {
 
   private int power;
   private int speed;
@@ -12,7 +12,10 @@ public class SuperOneForAll {
   /**
    * Instantiates a new Super one for all.
    */
-  public SuperOneForAll() {};
+  public SuperOneForAll() {
+  }
+
+  ;
 
   /**
    * Instantiates a new Super one for all.
@@ -23,7 +26,7 @@ public class SuperOneForAll {
    */
 
 
-  public SuperOneForAll(int power,int speed,int defense){
+  public SuperOneForAll(int power, int speed, int defense) {
     this.power = power;
     this.speed = speed;
     this.defense = defense;
@@ -34,7 +37,7 @@ public class SuperOneForAll {
    *
    * @return the int
    */
-  public int getPower(){
+  public int getPower() {
     return this.power;
   }
 
@@ -43,7 +46,7 @@ public class SuperOneForAll {
    *
    * @return the int
    */
-  public int getSpeed(){
+  public int getSpeed() {
     return this.speed;
   }
 
@@ -52,26 +55,38 @@ public class SuperOneForAll {
    *
    * @return the int
    */
-  public int getDefense(){
+  public int getDefense() {
     return this.defense;
+  }
+
+  public int setSpeed(){
+    --this.speed;
+    return this.speed;
   }
 
   /**
    * Attack.
    */
-  public int attack(int power){
-    if (power > 0){
-      this.power -= power;
-    }
-    return this.power;
+  public void attack() {
+
   }
+
+
   /**
    * Run.
    */
-  public void run(){}
+  public void run() {
+  }
 
   /**
    * Blocking.
    */
-  public void blocking(){}
+  public void blocking() {
+  }
+
+  public void fly() {
+    System.out.println("일반 비행을 합니다");
+  }
+
+  public abstract void fly(int S);
 }
