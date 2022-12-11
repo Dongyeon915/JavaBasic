@@ -5,8 +5,7 @@ public class Human {
   private int eye;
   private int brain;
   private int nose;
-  private int heart = 1;
-
+  private int heart;
   private int life;
 
   ////////////////////////////////////////////
@@ -19,24 +18,18 @@ public class Human {
   }
 
   public Human(int eye, int brain) {
-    this.eye = eye;
+    this(eye);
     this.brain = brain;
-    this.life = 1;
   }
 
   public Human(int eye, int brain, int nose) {
-    this.eye = eye;
-    this.brain = brain;
+    this(eye, brain);
     this.nose = nose;
-    this.life = 1;
   }
 
   public Human(int eye, int brain, int nose, int heart) {
-    this.eye = eye;
-    this.brain = brain;
-    this.nose = nose;
+    this(eye, brain, nose);
     this.heart = heart;
-    this.life = 1;
   }
 
   /////////////////////////////////////////////
@@ -61,20 +54,24 @@ public class Human {
   }
 
   ////////////////////////////////////////////
-  public void setEye(int eyeCount) {
+  public int setEye(int eyeCount) {
     eye = eyeCount;
+    return eye;
   }
 
-  public void setBrain(int brainCount) {
-    brain = brainCount;
+  public int setBrain(int brain) {
+   this.brain = brain;
+    return brain;
   }
 
-  public void setNose(int noseCount) {
-    nose = noseCount;
+  public int setNose(int nose) {
+    this.nose = nose;
+    return nose;
   }
 
-  public void setHeart(int heartCount) {
-    heart = heartCount;
+  public int setHeart(int heart) {
+    this.heart = heart;
+    return heart;
   }
 
   /////////////////////////////////////////////
@@ -109,6 +106,4 @@ public class Human {
       System.out.println("심장이 없습니다..");
     }
   }
-
-
 }
