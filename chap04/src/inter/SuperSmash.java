@@ -1,8 +1,9 @@
 package inter;
 
-public class SuperSmash extends Smash implements Attackable,Flyable{
+public class SuperSmash extends Smash implements Attackable, Flyable {
 
   Attackable attackable;
+
   public SuperSmash(int damege, int duration, String name) {
     super(damege, duration, name);
   }
@@ -16,6 +17,7 @@ public class SuperSmash extends Smash implements Attackable,Flyable{
   public void setAttackable(Attackable attackable) {
     this.attackable = attackable;
   }
+
   @Override
   public void fly() {
     System.out.println("난다");

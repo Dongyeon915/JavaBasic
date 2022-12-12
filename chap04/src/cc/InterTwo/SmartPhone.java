@@ -1,6 +1,6 @@
 package cc.InterTwo;
 
-public class SmartPhone extends SuperCellPhone {
+public class SmartPhone extends SuperCellPhone implements UpDate{
 
   public String game;
 
@@ -11,5 +11,10 @@ public class SmartPhone extends SuperCellPhone {
 
   public void playGame() {
     System.out.println(game + " 을 실행합니다");
+  }
+
+  @Override
+  public void UpDateCharacter() {
+
   }
 }
