@@ -1,6 +1,6 @@
 package InterTwo;
 
-public class Coffeemachine extends Machine implements Function {
+public class Coffeemachine extends Machine implements Function, Transformation {
 
   private int water;
   private int coffeeBeans;
@@ -44,8 +44,16 @@ public class Coffeemachine extends Machine implements Function {
     return;
   }
 
-  public static void onFunction(Function functionName) {
+  public void onFunction(Function functionName) {
     functionName.newFunction();
   }
 
+  @Override
+  public void transform() {
+    return;
+  }
+
+  public void newTransform(Transformation transName){
+    transName.transform();
+  }
 }

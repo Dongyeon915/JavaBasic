@@ -9,10 +9,16 @@ public class Maxim {
     System.out.println(maxim.getWater());
     System.out.println(maxim.getCoffeeBeans());
 
+    OptimusPrime optimusPrime = new OptimusPrime();
+    Bumblebee bumblebee = new Bumblebee();
     Steam steam = new Steam();
+    Clean clean = new Clean();
     steam.newFunction();
 
-    Coffeemachine.onFunction(steam);
+    maxim.onFunction(clean);
+    maxim.newTransform(optimusPrime);
+    maxim.newTransform(bumblebee);
+
 
   }
 }
