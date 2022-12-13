@@ -47,7 +47,7 @@ public class AllMight extends OneForAll implements Smash,GetNewSkill {
 
   @Override
   public void newSkill() {
-    System.out.println("뭥?");
+
   }
 
   public void NewSkillTest(GetNewSkill newSkill){
