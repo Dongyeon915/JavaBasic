@@ -1,9 +1,12 @@
 package InterTwo;
 
+import java.util.stream.Stream;
+
 public class Coffeemachine extends Machine implements Function, Transformation {
 
   private int water;
   private int coffeeBeans;
+
 
   public Coffeemachine(String model, int water, int coffeeBeans) {
     super(model);
@@ -19,14 +22,12 @@ public class Coffeemachine extends Machine implements Function, Transformation {
     return this.coffeeBeans;
   }
 
-  public int setWater(int waterCount) {
+  private void setWater(int waterCount) {
     this.water = waterCount;
-    return getWater();
   }
 
-  public int setCoffeeBeans(int coffeeBeansCount) {
+  private void setCoffeeBeans(int coffeeBeansCount) {
     this.coffeeBeans = coffeeBeansCount;
-    return getCoffeeBeans();
   }
 
   @Override
@@ -53,7 +54,17 @@ public class Coffeemachine extends Machine implements Function, Transformation {
     return;
   }
 
-  public void newTransform(Transformation transName){
+  public void newTransform(Transformation transName) {
     transName.transform();
   }
+
+  public boolean newSet(int water){
+    if (getWater() >= water) {
+      return false;
+    }
+    setWater(water);
+    return true;
+  }
+
 }
+
