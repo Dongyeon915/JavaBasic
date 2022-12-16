@@ -21,6 +21,14 @@ public class SteveSoldier {
     String steveName = steve.getName();
     System.out.println(steveName);
 
+    Steve[] array = new Steve[3];
+    array = new Steve[] {steve,kim,lee,bak};
+    for (int i = 0; i < array.length; i++) {
+      System.out.println(array[i].getName());
+      for (int j = 0; j < i; j++) {
+      }
+      array[i].setWeaponn(gun);
+    }
 
 
 
