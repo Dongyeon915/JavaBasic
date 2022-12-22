@@ -1,10 +1,11 @@
 package Inter1220;
 
-public class Resistance implements Gun {
+public class Resistance {
 
   private String name;
   private int age;
   private String gender;
+  private Gun gun;
 
   public Resistance(String name, int age, String gender) {
     this.name = name;
@@ -42,10 +43,7 @@ public class Resistance implements Gun {
     return getGender();
   }
 
-  @Override
-  public void gun() {
-    return;
-  }
+
 
   public void getGun(Gun gunModel) {
     gunModel.gun();
