@@ -70,5 +70,7 @@ public class LList {
       System.out.println(e.getKey());
       System.out.println(e.getValue());
     }
+
+    Set<Entry<String,String>> entrySet = map.entrySet();
 }
 }

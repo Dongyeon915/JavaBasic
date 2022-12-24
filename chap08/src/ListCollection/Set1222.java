@@ -26,5 +26,6 @@ public class Set1222 {
       System.out.println(u);
     }
 
+
   }
 }
