@@ -19,5 +19,8 @@ public class Map1222 {
       System.out.println(e.getValue());
       System.out.println(e.getKey());
     }
+
+
+
   }
 }

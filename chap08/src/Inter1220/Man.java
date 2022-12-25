@@ -1,5 +1,7 @@
 package Inter1220;
 
+import java.util.Objects;
+
 public class Man extends Resistance {
 
   private String front;
@@ -26,4 +28,5 @@ public class Man extends Resistance {
   public void run() {
     System.out.println("뛴다!");
   }
+
 }
