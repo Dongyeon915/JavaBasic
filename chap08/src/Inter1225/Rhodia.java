@@ -31,4 +31,6 @@ public class Rhodia extends Diary {
     this.pageNum = pageNum;
     return getPageNum();
   }
+
+
 }

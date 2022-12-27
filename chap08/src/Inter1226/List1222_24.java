@@ -1,4 +1,4 @@
-package ListCollection;
+package Inter1226;
 
 public class List1222_24 {
 
@@ -34,7 +34,7 @@ public class List1222_24 {
 //    Integer integer = list.get(0);
 //    System.out.println(integer);
 
-//    List<String> list = new ArrayList<>();
+//    List<String> list = new ArrayList<>(r);
 //    list.add("0번 김동연!");
 //    list.add(0, "0번 밀치기");
 //    int b = list.size();

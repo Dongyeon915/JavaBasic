@@ -1,6 +1,7 @@
 package Inter1225;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -10,6 +11,16 @@ import java.util.Map.Entry;
 import java.util.Set;
 
 public class DiaryExample {
+
+  @Override
+  public boolean equals(Object obj) {
+    return super.equals(obj);
+  }
+
+  @Override
+  public int hashCode() {
+    return super.hashCode();
+  }
 
   public static void main(String[] args) {
     Rhodia rhodia1 = new Rhodia("김동연1", 30, "ehd9567@naver.com", 0012315, "brown", 1400);
@@ -63,5 +74,20 @@ public class DiaryExample {
 //     System.out.println(a.getKey().getColor());
 //     System.out.println(a.getValue());
 //   }
+      Rhodia[] rhodias = new Rhodia[5];
+      rhodias = new Rhodia[] {rhodia1,rhodia2,rhodia3,rhodia4,rhodia5};
+    for (int i = 0; i < rhodias.length; i++) {
+      System.out.println(rhodias[i].getName());
+    }
+
+    int[] arr = {3,2,0,1,4};
+    Arrays.sort(arr);
+
+    String[][] strings = new String[][]{{"Aaa"},{"awd"},{"aaa"},{"aaa"}};
+    String[][] strings1 = new String[][]{{"Aaa"},{"awd"},{"aaa"},{"aaa"}};
+    System.out.println(Arrays.deepEquals(strings,strings1));
+
+    List list = Arrays.asList(arr);
+    List list1 = new ArrayList(Arrays.asList(1,2,3,4,5));
+    }
   }
-}

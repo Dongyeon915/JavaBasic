@@ -1,4 +1,4 @@
-package ListCollection;
+package Inter1226;
 
 import java.util.HashSet;
 import java.util.Iterator;

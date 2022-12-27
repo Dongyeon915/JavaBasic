@@ -1,4 +1,4 @@
-package ListCollection;
+package Inter1226;
 
 import java.util.HashMap;
 import java.util.Map;
