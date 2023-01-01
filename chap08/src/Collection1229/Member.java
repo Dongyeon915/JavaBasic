@@ -1,9 +1,9 @@
-package Collection1229;
+package chap08.src.Collection1229;
 
 import java.util.Comparator;
 import java.util.Objects;
 
-public class Member implements Comparable<Member>, Comparator<Member> {
+public class Member implements Comparable<Member>, Comparator<Member>,Say{
 
   private String name;
   private int age;
@@ -97,5 +97,11 @@ public class Member implements Comparable<Member>, Comparator<Member> {
   @Override
   public int compareTo(Member o) {
     return 0;
+  }
+
+  @Override
+  public String say() {
+    System.out.println("네");
+    return say();
   }
 }
